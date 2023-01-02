@@ -1,9 +1,14 @@
 <tempplate>
-    <h1>Hello User, Welcome on Home Page</h1>
- 
+ <div>
+ <h3>
+ This HOme page
+ </h3>
+ </div>
 </tempplate>
  <script>
+//  eslint-disable-next-line
+ /* eslint-disable */
  export default{
-    name:'Home'
+    name:"Home"
  }
 </script>
