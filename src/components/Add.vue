@@ -3,10 +3,18 @@
     <Header />
     <h1>Hello user, Welcome to add restaurant Page</h1>
     <form class="add">
-      <input type="text" placeholder="Enter Name" />
-      <input type="text" placeholder="Enter Address" />
-      <input type="text" placeholder="Enter Contact" />
-      <button type="button">Add New restaurant</button> 
+      <input type="text" placeholder="Enter Name" v-model="restaurant.name" />
+      <input
+        type="text"
+        placeholder="Enter Address"
+        v-model="restaurant.address"
+      />
+      <input
+        type="text"
+        placeholder="Enter Contact"
+        v-model="restaurant.contact"
+      />
+      <button type="button" @click="addRestaurant">Add New restaurant</button>
     </form>
   </div>
 </template>
@@ -15,20 +23,23 @@
 import Header from "./Header.vue";
 export default {
   name: "Add",
-  data(){
-    return{
-      restaurant:{
-      name:"",
-      address:"",
-      contact:""
-    }
-    }
+  data() {
+    return {
+      restaurant: {
+        name: "",
+        address: "",
+        contact: "",
+      },
+    };
   },
   components: {
     Header,
   },
+  methods:{
+    addRestaurant(){
+console.log('restaurant', this.restaurant) 
+    }
+  }
 };
 </script>
-<style lang="css" scoped>
-
-</style>
+<style lang="css" scoped></style>
