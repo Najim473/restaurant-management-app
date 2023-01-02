@@ -1,0 +1,96 @@
+{
+  "user": [
+    {
+      "name": "Najim Uddin",
+      "email": "najim7304@gmail.com",
+      "password": "23sdkf",
+      "id": 1
+    },
+    {
+      "name": "Moin Uddin",
+      "email": "moin7304@gmail.com",
+      "password": "24sdkf",
+      "id": 2
+    },
+    {
+      "name": "Afsar Uddin",
+      "email": "afsar7304@gmail.com",
+      "password": "25sdkf",
+      "id": 3
+    },
+    {
+      "name": "Nasir Uddin",
+      "email": "nasir7304@gmail.com",
+      "password": "26sdkf",
+      "id": 4
+    },
+    {
+      "name": "Sajidur Rahman",
+      "email": "sajid2343@gmail.com",
+      "password": "sajindkdk23",
+      "id": 5
+    },
+    {
+      "name": "Arafat Hossain",
+      "email": "arafat343@gmail.com",
+      "password": "arafat2234",
+      "id": 6
+    },
+    {
+      "name": "Sajjad",
+      "email": "sajjad342@gmail.com",
+      "password": "saffad2323",
+      "id": 7
+    },
+    {
+      "name": "Sharar",
+      "email": "sharar234@gmail.com",
+      "password": "sharar2323",
+      "id": 8
+    },
+    {
+      "name": "Miskat",
+      "email": "miskat123@gmail.com",
+      "password": "miskat12345",
+      "id": 9
+    },
+    {
+      "name": "swamitra",
+      "email": "swamitra@gmail.com",
+      "password": "swa2342",
+      "id": 10
+    },
+    {
+      "name": "afsar ali",
+      "email": "afsarali@gmailc.om",
+      "password": "afsarali",
+      "id": 11
+    }
+  ],
+  "restaurant": [
+    {
+      "name": "Star Bucks ",
+      "contact": "+689 65650354",
+      "address": "United States",
+      "id": 4
+    },
+    {
+      "name": "Harfi",
+      "contact": "+654 02045485",
+      "address": "United Arab Emirates",
+      "id": 5
+    },
+    {
+      "name": "Pizza Burg",
+      "contact": "+5956 656565",
+      "address": "united Kingdom",
+      "id": 6
+    },
+    {
+      "name": "Khana's",
+      "contact": "+088 01356697694",
+      "address": "Bangladesh",
+      "id": 7
+    }
+  ]
+}
