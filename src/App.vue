@@ -31,13 +31,17 @@ h1 {
   text-align: center;
 }
 .register,
-.login, .add {
+.login,
+.add,
+.update {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 .register input,
-.login input, .add input {
+.login input,
+.add input,
+.update input {
   width: 300px;
   height: 40px;
   padding-left: 20px;
@@ -48,7 +52,9 @@ h1 {
   border: 1px solid skyblue;
 }
 .register button,
-.login button, .add button {
+.login button,
+.add button,
+.update button {
   width: 320px;
   height: 40px;
   background: rgb(11, 148, 202);

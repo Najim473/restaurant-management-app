@@ -8,6 +8,7 @@
         <td>Name</td>
         <td>Contact</td>
         <td>Address</td>
+        <td>Action</td>
       </tr>
       <tr v-for="item in restaurant" :key="item.id">
         <td>
@@ -22,6 +23,9 @@
         <td>
           {{ item.address }}
         </td>
+        <!-- <td><router-link to="/update">update</router-link></td> -->
+        <!-- For catch id  -->
+        <td><router-link :to="'/update/'+item.id">update</router-link></td>
       </tr>
     </table>
   </div>
@@ -54,11 +58,15 @@ export default {
 };
 </script>
 <style lang="css" scoped>
-td{
-  height:30px;
+td {
+  height: 30px;
   text-align: center;
   font-size: 15px;
-  width:120px;
+  width: 120px;
   padding: 10px 0;
+}
+td a {
+  text-decoration: none;
+  font-size: 15px;
 }
 </style>

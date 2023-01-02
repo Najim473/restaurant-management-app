@@ -14,7 +14,7 @@
         placeholder="Enter Contact"
         v-model="restaurant.contact"
       />
-      <button type="button" @click="addRestaurant">Add New restaurant</button>
+      <button type="button" @click="addRestaurant">Add New Restaurant</button>
     </form>
   </div>
 </template>
@@ -44,12 +44,11 @@ export default {
         contact: this.restaurant.contact,
         address: this.restaurant.address,
       });
-     if(result.status==201){
-      this.$router.push({name:"Home"})
-     }
-     else if(result.status!==201){
-      alert('Something is wrong')
-     }
+      if (result.status == 201) {
+        this.$router.push({ name: "Home" });
+      } else if (result.status !== 201) {
+        alert("Something is wrong");
+      }
       console.log("result", result);
     },
   },
