@@ -15,5 +15,6 @@ p{
     font-size: 30px;
     padding: 50px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
 }
 </style>
