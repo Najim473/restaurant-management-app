@@ -21,6 +21,7 @@
 <script>
 /* eslint-disable */
 import Header from "./Header.vue";
+import axios from "axios";
 export default {
   name: "Add",
   data() {
@@ -35,11 +36,23 @@ export default {
   components: {
     Header,
   },
-  methods:{
-    addRestaurant(){
-console.log('restaurant', this.restaurant) 
-    }
-  }
+  methods: {
+    async addRestaurant() {
+      console.log("restaurant", this.restaurant);
+      const result = await axios.post("http://localhost:3000/restaurant", {
+        name: this.restaurant.name,
+        contact: this.restaurant.contact,
+        address: this.restaurant.address,
+      });
+     if(result.status==201){
+      this.$router.push({name:"Home"})
+     }
+     else if(result.status!==201){
+      alert('Something is wrong')
+     }
+      console.log("result", result);
+    },
+  },
 };
 </script>
 <style lang="css" scoped></style>
