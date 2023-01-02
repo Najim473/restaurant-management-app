@@ -30,6 +30,9 @@ export default {
         localStorage.setItem("user-info",JSON.stringify(result.data[0]))
         this.$router.push({name:"Home"})
       }
+      else{
+        
+      }
       //   console.warn(this.email, this.password);
       console.warn(result);
     },
