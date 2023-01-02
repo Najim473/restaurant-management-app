@@ -8,6 +8,7 @@
     <input type="email" v-model="email" placeholder="Enter Email" />
     <input type="password" v-model="password" placeholder="Enter Passwordf" />
     <button @click="signUp">Sign Up</button>
+    <router-link to="/login">Login</router-link>
   </div>
 </template>
 <script>
@@ -82,5 +83,10 @@ h1 {
   border: none;
   cursor: pointer;
   color: #fff;
+}
+a {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
 </style>
