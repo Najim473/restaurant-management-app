@@ -1,12 +1,15 @@
 <template>
-  <h2>Restaurant management</h2>
+  <div>
+    <SignUp/>
+  </div>
 </template>
 
 <script>
-
+import SignUp from './components/SignUp.vue'
 export default {
   name: 'App',
   components: {
+    SignUp
   }
 }
 </script>
