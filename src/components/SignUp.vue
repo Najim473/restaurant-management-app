@@ -7,7 +7,7 @@
     <input type="text" v-model="name" placeholder="Enter Name" />
     <input type="email" v-model="email" placeholder="Enter Email" />
     <input type="password" v-model="password" placeholder="Enter Passwordf" />
-    <button type="submit">Sign Up</button>
+    <button @click="signUp">Sign Up</button>
   </div>
 </template>
 <script>
@@ -22,7 +22,7 @@ export default {
   },
   methods:{
     signUp(){
-      console.log("signUp")
+      console.log("signUp",this.name,this.email,this.password)
     }
   }
 };
@@ -58,7 +58,7 @@ h1 {
 .register button {
   width: 320px;
   height: 40px;
-  background: skyblue;
+  background: rgb(11, 148, 202);
   font-size: 15px;
   border: none;
   cursor: pointer;
